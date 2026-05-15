@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Projects</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* TITLE */
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* PROJECT GRID */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+/* BUTTON */
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: white;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: #ff7eb3;
+    color: white;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🚀 My Web Projects</h1>
+    <p class="subtitle">Internship Work Showcase</p>
+
+    <div class="projects">
+
+        <!-- Portfolio -->
+        <div class="card">
+            <h3>👤 Portfolio Website</h3>
+            <p>Personal profile with skills and contact info.</p>
+            <a href="portfolio/index.html">View Project</a>
+        </div>
+
+        <!-- Landing Page -->
+        <div class="card">
+            <h3>🌐 Landing Page</h3>
+            <p>Responsive product landing page design.</p>
+            <a href="landing page.html">View Project</a>
+        </div>
+
+        <!-- API Project -->
+        <div class="card">
+            <h3>🔗 API Integration</h3>
+            <p>Dynamic quote generator using API.</p>
+            <a href="API integration/index.html">View Project</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
